@@ -1,0 +1,54 @@
+/* Any CSS you use to flesh out your UI can go here */
+
+h1 {
+    text-align: center;
+}
+
+#render_movies {
+    display: flex;
+    flex-direction: column;
+}
+
+#render_movies > img {
+    height: auto;
+    margin: 0 auto;
+    width: 400px;
+}
+
+.row {
+    display: flex;
+    border: 1px solid gray;
+    padding: 50px;
+    margin: 25px 50px;
+}
+
+.overview {
+    background-color: gainsboro;
+    border: 5px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.description {
+    font-size: 20px;
+    font-weight: 700;;
+    margin-top: 30px;
+}
+
+.details {
+    background-color: gainsboro;
+    border: 5px solid gray;
+    margin-left: 50px;
+    padding: 50px;
+}
+
+.details div {
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+
+.thumbnail {
+    cursor: pointer;
+}
