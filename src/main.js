@@ -24,11 +24,10 @@ async function fetchMetaData() {
       data = await response.json();
       totalResults = data.totalResults;
       resp = data.Response;
-      console.log(data.Search);
+
       if (data && data.Search) {
           allData.push(...data.Search);
       }
-      console.log(totalResults, resp, currentPage);
       morePagesAvailable = resp === 'True' ? true : false;
     }
   
@@ -56,7 +55,6 @@ async function fetchMetaData() {
       data = data.sort(sortByYear)
       data.sort(sortByTitle);
 
-      console.log(data);
       makeList(data);
     });
 
